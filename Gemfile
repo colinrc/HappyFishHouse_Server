@@ -44,13 +44,16 @@ gem 'bootstrap-sass'
 
 gem 'spring-commands-rspec', group: :development
 
-group :development, :test do
+group :development do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_girl_rails'
+  gem 'rspec-activemodel-mocks'
   gem 'shoulda-matchers'
-
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'launchy'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
@@ -61,10 +64,11 @@ end
 group :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_girl_rails'
+  gem 'rspec-activemodel-mocks'
   gem 'shoulda-matchers'
   gem 'faker'
   gem 'capybara'
   gem 'guard-rspec'
   gem 'launchy'
-  # gem 'shoulda', '~> 3.5'
+
 end
