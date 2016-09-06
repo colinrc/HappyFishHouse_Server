@@ -51,9 +51,7 @@ group :development do
   gem 'factory_girl_rails'
   gem 'rspec-activemodel-mocks'
   gem 'shoulda-matchers'
-  gem 'capybara'
-  gem 'guard-rspec'
-  gem 'launchy'
+  gem 'faker'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
@@ -68,7 +66,7 @@ group :test do
   gem 'shoulda-matchers'
   gem 'faker'
   gem 'capybara'
-  gem 'guard-rspec'
+  gem 'guard-rspec', require: false
   gem 'launchy'
 
 end

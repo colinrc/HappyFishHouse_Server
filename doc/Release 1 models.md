@@ -51,6 +51,23 @@
  [] Alkalinity
  [] Calcium
  
+## measurement_type
+ [] name
+ [] tank_type
+ [] measurement_label
+ [] maximum
+ [] minimum
+ 
+ ## measurement_label
+ [] label
+ [] name
+ [] chemical_formula
+ 
+ ## tank_type (code as drop down with user enterable; not a normalised table)
+ [] marine
+ [] coral
+ [] tropical
+ 
 ### Less important
  [] Silica
  [] Iodine
