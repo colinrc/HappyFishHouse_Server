@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160906225659) do
+ActiveRecord::Schema.define(version: 20160912081140) do
 
   create_table "measure_types", force: :cascade do |t|
     t.string   "name"
@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 20160906225659) do
     t.string   "unit"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.index ["user_id"], name: "index_measure_types_on_user_id"
   end
 
   create_table "measurement_types", force: :cascade do |t|
@@ -28,6 +30,8 @@ ActiveRecord::Schema.define(version: 20160906225659) do
     t.float    "minimum"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.index ["user_id"], name: "index_measurement_types_on_user_id"
   end
 
   create_table "tank_types", force: :cascade do |t|

@@ -5,6 +5,6 @@ RSpec.describe User, type: :model do
 
   describe "Associations" do
     it { should have_many(:tank_type) }
-    it { should have_many(:measurement_type) }
+    it { should have_many(:measurement_types) }
   end
 end
