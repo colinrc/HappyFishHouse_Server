@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160912081140) do
+ActiveRecord::Schema.define(version: 20170211122853) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "measure_names", force: :cascade do |t|
+    t.string   "name"
+    t.string   "unit"
+    t.string   "compound"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "measure_types", force: :cascade do |t|
     t.string   "name"
@@ -19,7 +30,7 @@ ActiveRecord::Schema.define(version: 20160912081140) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
-    t.index ["user_id"], name: "index_measure_types_on_user_id"
+    t.index ["user_id"], name: "index_measure_types_on_user_id", using: :btree
   end
 
   create_table "measurement_types", force: :cascade do |t|
@@ -31,7 +42,7 @@ ActiveRecord::Schema.define(version: 20160912081140) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
-    t.index ["user_id"], name: "index_measurement_types_on_user_id"
+    t.index ["user_id"], name: "index_measurement_types_on_user_id", using: :btree
   end
 
   create_table "tank_types", force: :cascade do |t|
@@ -62,10 +73,10 @@ ActiveRecord::Schema.define(version: 20160912081140) do
     t.datetime "locked_at"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-    t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
+    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+    t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
   end
 
 end

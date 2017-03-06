@@ -1,8 +1,9 @@
 require 'rails_helper'
 
-let(:measurement1){ FactoryGirl.create(:measurement_type, :complete ) }
+
 
 RSpec.describe MeasurementType, type: :model do
+  let(:measurement1){ FactoryGirl.create(:measurement_type, :complete ) }
 
   it "has a valid factory" do
     expect(create(:measurement_type, :complete)).to be_valid
