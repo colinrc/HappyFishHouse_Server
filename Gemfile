@@ -3,10 +3,9 @@ source 'https://rubygems.org'
 
 gem 'rails'
 gem 'pg'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'uglifier'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -16,12 +15,12 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', group: :doc
 
 # Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt'
 gem 'devise'
 gem 'bootstrap-sass'
 # stuff for OmniAuth ... later
@@ -44,14 +43,16 @@ gem 'bootstrap-sass'
 
 gem 'spring-commands-rspec', group: :development
 
-group :development do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+group :development,:test do
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_girl_rails'
   gem 'rspec-activemodel-mocks'
   gem 'shoulda-matchers'
-  gem 'faker'
+  gem 'faker'end
+
+group :development do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
@@ -60,11 +61,6 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails', '~> 3.5'
-  gem 'factory_girl_rails'
-  gem 'rspec-activemodel-mocks'
-  gem 'shoulda-matchers'
-  gem 'faker'
   gem 'capybara'
   gem 'guard-rspec', require: false
   gem 'launchy'
