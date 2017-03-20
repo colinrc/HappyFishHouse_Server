@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d1d0f5f-c0fa-4ed2-9a68-e0a21e341d1b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/HappyFish_Server.iml" afterPath="$PROJECT_DIR$/.idea/HappyFish_Server.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/measure_name.rb" afterPath="$PROJECT_DIR$/app/models/measure_name.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/measurement_type.rb" afterPath="$PROJECT_DIR$/app/models/measurement_type.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160906225659_create_measurement_types.rb" afterPath="$PROJECT_DIR$/db/migrate/20160906225659_create_measurement_types.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/factories/measurement_types.rb" afterPath="$PROJECT_DIR$/spec/factories/measurement_types.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/measurement_type_spec.rb" afterPath="$PROJECT_DIR$/spec/models/measurement_type_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
-    </list>
+    <list default="true" id="5d1d0f5f-c0fa-4ed2-9a68-e0a21e341d1b" name="Default" comment="" />
     <ignored path="HappyFish_Server.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -695,7 +682,7 @@
       <workItem from="1486499785243" duration="2893000" />
       <workItem from="1488926258700" duration="2978000" />
       <workItem from="1489097343524" duration="1021000" />
-      <workItem from="1489099047788" duration="17396000" />
+      <workItem from="1489099047788" duration="17496000" />
     </task>
     <task id="LOCAL-00001" summary="Resolved issues with static pages.">
       <created>1470984689287</created>
@@ -747,7 +734,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118582000" />
+    <option name="totallyTimeSpent" value="118682000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
