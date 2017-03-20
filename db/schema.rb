@@ -23,33 +23,18 @@ ActiveRecord::Schema.define(version: 20170211122853) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "measure_types", force: :cascade do |t|
-    t.string   "name"
-    t.string   "compound"
-    t.string   "unit"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "user_id"
-    t.index ["user_id"], name: "index_measure_types_on_user_id", using: :btree
-  end
-
   create_table "measurement_types", force: :cascade do |t|
     t.string   "name"
     t.string   "tank_type"
     t.string   "label"
-    t.float    "maximum"
-    t.float    "minimum"
+    t.float    "maximum_allowable"
+    t.float    "minimum_allowable"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
     t.index ["user_id"], name: "index_measurement_types_on_user_id", using: :btree
   end
 
-  create_table "tank_types", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

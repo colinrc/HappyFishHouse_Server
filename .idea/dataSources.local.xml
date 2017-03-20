@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="postgres@localhost" uuid="a3a98ff8-37ff-48af-a0e3-859ace2def2c">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    <data-source name="HappyFish_dev@localhost" uuid="a3a98ff8-37ff-48af-a0e3-859ace2def2c">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <first-sync>true</first-sync>
       <user-name>hfh</user-name>
+      <resolve-scope>postgres:public,hfh</resolve-scope>
     </data-source>
   </component>
 </project>

@@ -3,8 +3,8 @@ class CreateMeasurementTypes < ActiveRecord::Migration[5.0]
     create_table :measurement_types do |t|
       t.string :name
       t.string :label
-      t.float :maximum
-      t.float :minimum
+      t.float :maximum_allowable
+      t.float :minimum_allowable
 
       t.timestamps
     end
