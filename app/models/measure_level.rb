@@ -1,6 +1,6 @@
 # Provides a particular users preferences for suitable test results of a particular chemical in their nominated tanks
 
-class MeasurementType < ApplicationRecord
+class MeasureLevel < ApplicationRecord
   belongs_to :user
   validates :maximum_allowable, numericality: true
   validates :minimum_allowable, numericality: true

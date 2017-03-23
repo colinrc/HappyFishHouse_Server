@@ -8,6 +8,6 @@ RSpec.describe User, type: :model do
       pending 'Assocation from users to many tanks per user not yet implemented'
       should have_many(:tank_type)
     }
-    it { should have_many(:measurement_types) }
+    it { should have_many(:measure_levels) }
   end
 end
