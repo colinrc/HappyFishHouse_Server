@@ -7,5 +7,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/HappyFish_dev</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="HappyFish_test@localhost" uuid="3373d490-cfd6-4506-ba89-5f89c2454656">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/HappyFish_test</jdbc-url>
+    </data-source>
   </component>
 </project>

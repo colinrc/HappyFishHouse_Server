@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :measurement_type do
+  factory :measure_level do
     name "Measure Test"
   end
 

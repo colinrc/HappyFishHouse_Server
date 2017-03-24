@@ -10,10 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170211122853) do
+ActiveRecord::Schema.define(version: 20170323223404) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "measure_levels", force: :cascade do |t|
+    t.string   "name"
+    t.string   "tank_type"
+    t.string   "label"
+    t.float    "maximum_allowable"
+    t.float    "minimum_allowable"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.integer  "user_id"
+    t.string   "unit"
+    t.index ["user_id"], name: "index_measure_levels_on_user_id", using: :btree
+  end
 
   create_table "measure_names", force: :cascade do |t|
     t.string   "name"
@@ -22,19 +35,6 @@ ActiveRecord::Schema.define(version: 20170211122853) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
-  create_table "measurement_types", force: :cascade do |t|
-    t.string   "name"
-    t.string   "tank_type"
-    t.string   "label"
-    t.float    "maximum_allowable"
-    t.float    "minimum_allowable"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "user_id"
-    t.index ["user_id"], name: "index_measurement_types_on_user_id", using: :btree
-  end
-
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

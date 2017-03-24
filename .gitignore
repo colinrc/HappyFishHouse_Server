@@ -8,10 +8,12 @@
 /.bundle
 /.idea/workspace.xml
 /.idea/tasks.xml
+/.idea/dataSources/*
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
+/.idea/datasources/*
 
 # Ignore all logfiles and tempfiles.
 /log/*
