@@ -8,7 +8,9 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>hfh</user-name>
+      <introspection-schemas>HappyFish_dev:public</introspection-schemas>
       <resolve-scope>postgres:hfh,public</resolve-scope>
+      <unqualified-resolve-schemas>postgres:hfh,public</unqualified-resolve-schemas>
     </data-source>
     <data-source name="HappyFish_test@localhost" uuid="3373d490-cfd6-4506-ba89-5f89c2454656">
       <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
@@ -17,7 +19,9 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>hfh</user-name>
+      <introspection-schemas>HappyFish_test:public</introspection-schemas>
       <resolve-scope>postgres:hfh,public</resolve-scope>
+      <unqualified-resolve-schemas>postgres:hfh,public</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

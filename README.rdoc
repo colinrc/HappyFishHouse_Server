@@ -1,28 +1,72 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This application is to help with managing one or more home aquariums as well as helping professionals who look after
+multiple clients tanks. The goal is to be simple to set up a new tank while be customisable for a particular users preference.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== Major Features
+
+The major features are planned to include
+
+= Fish
+
+* Record current fish, purchase details and any notes
+* Advice on fish compatability based on current stock
+
+= Chemistry
+
+* Store chemical and related test results
+* Provide warnings if the chemistry range is outside desired parameters
+* Provide reasoanble default parameters for various types of tanks (marine, tropical etc) and allow for simple customisation
+* Supports multiple tanks
+* Store information on addidatives and purchase details
+
+= Equipment
+
+* Store tank details with purhcase details
+* Store related equipemnt with purchase details
+
+= Events
+
+* Store significant events that have happened in the tank
+* Attempts for treatment and resuts
+
+= Community
+
+* Provide a simple way to include information regarding your tank for discussion forums
+
+= Reports
+
+* Provide simple graphs showing trends and correlations
+
+== Architecture
+
+HappyFish is a Rails application with a simple HTML for all functions.
+There will be a backing API for most functions with the intention that the richer front end will be
+developed in a JS framework. Mobile clients are also a possiblity in the future.
+
+== Database
+
+The application has been developed with Postgres however should be compatable with most databases.
+
+== Testing
+
+Testing is using rspec with factory girl to assist with data generation.
+Development basically follows a TDD methodology.
+
+== Documentation
+
+I come from a Java background and prefer to have generated documents for all classes with their attributes.
+Documentation is generated using RDoc and is stored in the documentation directory.
+
+== Versions
+
+The following versions of the major software have been used, future or previous versions may work however they are untested.
+
+* Rails 5
+* Ruby 2.0.4
+* RSpec 3.5
+
+== License
+
+== Code of Conduct
