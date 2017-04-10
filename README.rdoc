@@ -57,7 +57,7 @@ Development basically follows a TDD methodology.
 == Documentation
 
 I come from a Java background and prefer to have generated documents for all classes with their attributes.
-Documentation is generated using RDoc and is stored in the documentation directory.
+Documentation is generated using YARD and is stored in the documentation directory.
 
 == Versions
 

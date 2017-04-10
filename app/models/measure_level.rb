@@ -9,6 +9,7 @@ class MeasureLevel < ApplicationRecord
   validate :maximum_is_greater_than_minimum
 
 # ...
+# @todo Move tank to a model
 
 #######
   private
@@ -18,7 +19,7 @@ class MeasureLevel < ApplicationRecord
     return if maximum_allowable.blank? || minimum_allowable.blank?
 
     if maximum_allowable <= minimum_allowable
-      errors.add(:maximum_allowable, "cannot be lower than the minimum " )
+      errors.add(:maximum_allowable, "must be grater than the minimum " )
     end
   end
 

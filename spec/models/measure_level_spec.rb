@@ -10,8 +10,11 @@ RSpec.describe MeasureLevel, type: :model do
   end
   it "stores an optional chemical label"
 
-  describe "Measurement Range", MeasureLevel, type: :model do
+  it "must be associated to a measure_name object to describe it" do
 
+  end
+
+  describe "Measurement Range", MeasureLevel, type: :model do
 
     it "stores a numberic minimum measure" do
       should validate_numericality_of(:minimum_allowable)
@@ -31,7 +34,14 @@ RSpec.describe MeasureLevel, type: :model do
   end
   it "returns the tank type as a string"
 
-  it { should belong_to(:user) }
+
+  describe "Associations" do
+    it { should belong_to(:user) }
+
+    it {
+      pending
+      should have_one(:tank_details) }
+  end
 end
 
 
