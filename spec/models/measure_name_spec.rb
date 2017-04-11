@@ -1,11 +1,15 @@
 require 'rails_helper'
 
-RSpec.describe MeasureName, type: :model do
+class MeasureNameTest
+  include MeasureName
+end
 
-  let( :fullname ) { build(:measure_name, :complete_measure_name ) }
+describe MeasureNameTest, type: :model do
+
+  let( :fullname ) { build( :MeasureNameTest ) }
 
   it "is invalid without a name" do
-    expect( build(:measure_name, :complete_measure_name, name: nil ).isValid? ).to eq false
+    expect( build( :MeasureNameTest, name: nil ).isValid? ).to eq false
   end
 
   it "should return a name" do
