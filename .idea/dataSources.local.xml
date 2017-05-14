@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="HappyFish_dev@localhost" uuid="a3a98ff8-37ff-48af-a0e3-859ace2def2c">
+    <data-source name="Rails HappyFishHouse_Server: test" uuid="e95d790a-cff1-4371-82d2-5497f20988e4">
       <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>hfh</user-name>
-      <introspection-schemas>HappyFish_dev:public</introspection-schemas>
-      <resolve-scope>postgres:hfh,public</resolve-scope>
-      <unqualified-resolve-schemas>postgres:hfh,public</unqualified-resolve-schemas>
-    </data-source>
-    <data-source name="HappyFish_test@localhost" uuid="3373d490-cfd6-4506-ba89-5f89c2454656">
-      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
       <user-name>hfh</user-name>
       <introspection-schemas>HappyFish_test:public</introspection-schemas>
-      <resolve-scope>postgres:hfh,public</resolve-scope>
-      <unqualified-resolve-schemas>postgres:hfh,public</unqualified-resolve-schemas>
+    </data-source>
+    <data-source name="Rails HappyFishHouse_Server: development" uuid="a1a50aa2-b5fe-4fbe-81dd-be82090c06f1">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>hfh</user-name>
+      <introspection-schemas>HappyFish_dev:public</introspection-schemas>
     </data-source>
   </component>
 </project>
