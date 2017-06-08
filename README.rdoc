@@ -3,6 +3,10 @@
 This application is to help with managing one or more home aquariums as well as helping professionals who look after
 multiple clients tanks. The goal is to be simple to set up a new tank while be customisable for a particular users preference.
 
+The application is primarily for me to learn Rails as an API along with an Ember front end, however I also have fish to look after!
+
+Contributions are welcome as long as you follow the Code of Conduct, which in essence means to treat everyone reasonably.
+
 
 == Major Features
 
@@ -69,4 +73,9 @@ The following versions of the major software have been used, future or previous 
 
 == License
 
+The code is distributed under the [ Mozilla Public License Version 2.0. ](LICENSE.txt)
+
 == Code of Conduct
+
+The project places a strong emphasis on ensuring this is a welcoming project for everyone. The project supports and uses
+[ The Contributor Covenant. ](CODE_OF_CONDUCT.md)

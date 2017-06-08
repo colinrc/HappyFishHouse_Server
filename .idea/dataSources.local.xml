@@ -17,5 +17,10 @@
       <user-name>hfh</user-name>
       <introspection-schemas>HappyFish_dev:public</introspection-schemas>
     </data-source>
+    <data-source name="Rails HappyFishHouse_Server: production" uuid="d8816918-4ffc-4b9c-8e60-63337e5732e4">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>hfh</user-name>
+    </data-source>
   </component>
 </project>
