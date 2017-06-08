@@ -73,9 +73,9 @@ The following versions of the major software have been used, future or previous 
 
 == License
 
-The code is distributed under the {Mozilla Public License Version 2.0.}[./LICENSE.txt]
+The code is distributed under the {Mozilla Public License Version 2.0.}[http:./LICENSE.txt]
 
 == Code of Conduct
 
 The project places a strong emphasis on ensuring this is a welcoming project for everyone. The project supports and uses
-{[}The Contributor Covenant.}[./CODE_OF_CONDUCT.md]
+{The Contributor Covenant.}[http:./CODE_OF_CONDUCT.md]
