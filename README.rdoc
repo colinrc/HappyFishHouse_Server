@@ -77,5 +77,5 @@ The code is distributed under the {Mozilla Public License Version 2.0.}[LICENSE.
 
 == Code of Conduct
 
-The project places a strong emphasis on ensuring this is a welcoming project for everyone. The project supports and uses
+The project places a strong emphasis on ensuring this is a welcoming project for everyone, we utilise
 {The Contributor Covenant.}[CODE_OF_CONDUCT.md]
